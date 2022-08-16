@@ -1,0 +1,24 @@
+{
+  "collections": [
+    {
+      "name": "core",
+      "path": "../odin-install/Odin/core"
+    },
+    {
+      "name": "vendor",
+      "path": "../odin-install/Odin/vendor"
+    },
+    {
+      "name": "shared",
+      "path": "src"
+    }
+  ],
+  "enable_document_symbols": true,
+  "enable_semantic_tokens": true,
+  "enable_hover": true,
+  "enable_snippets": true,
+  "formatter": {
+    "tabs": true,
+    "characters": 10
+  }
+}
