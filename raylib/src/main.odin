@@ -8,7 +8,7 @@ Player :: struct {
     x: i32,
     y: i32,
     w: i32,
-    h: i32
+    h: i32,
 }
 
 Obstacle :: struct {
@@ -21,11 +21,12 @@ Obstacle :: struct {
 DrawPlayer :: proc(player: Player, obstacle: Obstacle) {
     using raylib
     color := BLUE
-    if player.x + player.w >= obstacle.x &&
-    player.y + player.h >= obstacle.y &&
-    player.x <= obstacle.x + obstacle.w &&
-    player.y <= obstacle.y + obstacle.h {
-	color = RED
+    if
+       player.x + player.w >= obstacle.x &&
+       player.y + player.h >= obstacle.y &&
+       player.x <= obstacle.x + obstacle.w &&
+       player.y <= obstacle.y + obstacle.h {
+        color = RED
     }
     DrawRectangle(player.x, player.y, player.w, player.h, color)
 }
