@@ -29,8 +29,8 @@ Odin is a general purpose programming language with distinct typing built for hi
 
 #### Further Odin support
 
-FAQ: https://odin-lang.org/docs/faq/\
-Wiki: https://github.com/odin-lang/Odin/wiki\
+FAQ: https://odin-lang.org/docs/faq/ \
+Wiki: https://github.com/odin-lang/Odin/wiki \
 Discord: https://discord.gg/sVBPHEv
 
 ## Getting Started
@@ -103,8 +103,9 @@ cd ols
 
 4. In every Odin project, put these files on the root of your project:
 
+`ols.json`
+
 ```json
-// ols.json
 {
   "collections": [
     { "name": "core", "path": "c:/path/to/Odin/core" },
@@ -117,8 +118,9 @@ cd ols
 }
 ```
 
+`odinfmt.json`
+
 ```json
-// odinfmt.json
 {
   "character_width": 80,
   "tabs": false,
@@ -172,6 +174,7 @@ git init
 ```r
 # This ignore the build artifacts produced from running/building the Odin source code
 *.bin
+*.o
 ```
 
 5. Make a `main.odin` file in `src` folder
