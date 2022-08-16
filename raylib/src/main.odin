@@ -24,8 +24,7 @@ DrawPlayer :: proc(player: Player, obstacle: Obstacle) {
     if player.x + player.w >= obstacle.x &&
     player.y + player.h >= obstacle.y &&
     player.x <= obstacle.x + obstacle.w &&
-    player.y <= obstacle.y + obstacle.h
-    {
+    player.y <= obstacle.y + obstacle.h {
 	color = RED
     }
     DrawRectangle(player.x, player.y, player.w, player.h, color)
